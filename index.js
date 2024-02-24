@@ -15,6 +15,7 @@ const root = {
     description: "A Description",
     price: 32.59,
     soldout: false,
+    stores: [{ store: "BH" }, { store: "JF" }],
   }),
 };
 

@@ -6,7 +6,12 @@ const schema = buildSchema(`
         name: String
         description: String
         price: Float
-        soldout: Boolean
+        soldout: Boolean,
+        stores: [Store]!
+    }
+
+    type Store {
+        store:  String
     }
 
     type Query {
