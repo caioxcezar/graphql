@@ -9,7 +9,13 @@ app.get("/", (req, res) => {
 });
 
 const root = {
-  hello: () => "Hi!",
+  product: () => ({
+    id: 1,
+    name: "A Name",
+    description: "A Description",
+    price: 32.59,
+    soldout: false,
+  }),
 };
 
 app.use("/graphql", graphqlHTTP({ schema, rootValue: root, graphiql: true }));
